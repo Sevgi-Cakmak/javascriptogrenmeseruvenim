@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+Uygulama 1:
+Girilen doğum yılına göre ehliyet alınıp alınmayacağını hesaplayınız.
+Eğer 18 yaşından küçük ise kaç senesi kalmıştır ?
+Uygulama 2:
+Girilen ay bilgisine göre mevsim bilgisini yazınız.
+(1:Ocak 2:Şubat ... )
+*/
+
+/*
+var dogum = prompt("Dogum yilinizi giriniz : ");
+var yil = 2018;
+var yas = yil - dogum;
+ if(yas<18) {
+    console.log("Ehliyet alamazsiniz");
+
+    console.log("Ehliyet alabilmek için "+(18-yas)+ " sene beklemelisiniz ");
+ }
+ else if(yas>=18){
+    console.log("Ehliyet alabilirsiniz.");
+ }
+ else{
+    console.log("Yanlis bir deger girdiniz");
+ }
+*/
+var ay = prompt("Ay");
+switch(ay){
+     case '1':
+     case '2':
+      console.log("Kis Mevsimi");
+        break;
+
+      case '3':
+      case '4':
+      case '5':
+        console.log("İlkbahar Mevsimi");
+            break;
+
+      case '6':
+      case '7': 
+      case '8': 
+         console.log("Yaz Mevsimi");
+            break;
+
+      case '9': 
+      case '10':  
+      case '11': 
+        console.log("Sonbahar Mevsimi");
+            break;
+             default:
+              console.log("yanlis bir ay girdiniz");
+}
+
+
+
+
+    </script>
+</body>
+</html>

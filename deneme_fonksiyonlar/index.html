@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    function topla (a,b) {
+        return a+b;
+    }
+    var sonuc = topla(10,20);
+   console.log(sonuc);
+   console.log(topla(20,30));
+    */
+
+
+    /*
+       var now = 2023 ;
+       function yashesapla(yas){
+        return now-yas;
+       }
+
+       var ali = yashesapla(1978);
+       var ahmet = yashesapla(2000);
+       console.log(ali);
+       console.log(ahmet);
+
+
+
+
+      var now = 2023;
+      function yashesapla(yas){
+        return now-yas;
+      }
+      var sevgi = yashesapla(2003);
+      var betul = yashesapla(2008);
+      console.log(sevgi);
+      console.log(betul);
+
+
+     function emeklilikHesapla(ad,yas){
+        var k_yas = yashesapla(yas);
+        var emeklilik = 65-k_yas ;
+        if(emeklilik>0){
+            console.log(ad + ' ' + emeklilik + ' yil sonra emekli olabilir ');
+        }else{
+            console.log(ad + ' zaten ' + (emeklilik*-1) + ' yil once emekli olmuş ');
+        }
+     }
+     emeklilikHesapla('Busra',2003);
+     emeklilikHesapla('Ceyda',1920);
+
+
+
+     function  resitlikHesapla(ad,soyad,yas){
+        var k_yas = yashesapla(yas);
+        var resitlik = 18-k_yas;
+        if(resitlik>0){
+            console.log(ad+ ' ' +soyad+ ' ' + resitlik+ ' yil sonra reşit olacaksiniz. ');
+        }else{
+            console.log(ad + ' ' +soyad+ ' ' + (resitlik*-1)+ ' yil once resit olmussunuz. ');
+        }
+     }
+     resitlikHesapla('Sevgi','Çakmak',2000);
+     resitlikHesapla('Asya','Sonmez',2010);
+
+    */
+
+
+    /*
+    function tekçiftlik(sayi){
+        if(sayi%2==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    var sayi = tekçiftlik(21);
+    var sayi1 = tekçiftlik(10);
+    console.log(sayi);
+    console.log(sayi1);
+   
+    if(tekçiftlik(11)){
+    console.log('sayi tek');
+    }else{
+    console.log('sayi çift');
+    }
+   */
+
+    function faktoryel(sayi){
+        var sonuc = 1;
+        for(var i=2 ; i<=sayi ; i++){
+            sonuc*=i;
+        }
+        return sonuc;
+    }
+    console.log(faktoryel(4));
+
+    
+
+    var modeller  = ['Opel','mazda','toyoto'];
+
+    function yazdir(dizi){
+        dizi.forEach(function(item){
+            console.log(item);
+        });
+    }
+    yazdir(modeller);
+    yazdir(modeller);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/* 1) : Bir personelin aşşağıdaki bilgilerini abject içinde skalayınız.
+
+** ad : Ali 
+** soyad  : Yılmaz
+** cinsiyet : Erkek 
+** telefon :02623457862
+** adres : izmit kocaeli
+** meslek : Bilgisayar Mühendisi
+** diller : ingilizce , almanca 
+** hobiler : sinema ,spor ,kitap,okumak
+
+2) : Bu personel kaç dil bilmektedir?
+3) : Bu personelin hobilerini alt alta yazdırınız .
+4) : 3 elemanlı bir personel bilgi listesi oluşturunuz .
+*/ 
+var ali = {
+    ad:'Ali',
+    soyad:'Yilmaz',
+    cinsiyet:'Erkek',
+    telefon: '02623457862',
+    adres : 'izmit kocaeli',
+    meslek : 'Bilgisayar Mühendisi',
+    diller : ['ingilizce','almanca'],
+    hobiler : ['sinema' ,'spor','kitap','okumak'],
+};
+console.log(ali.diller.length);
+ali.hobiler.forEach(function(hobi){
+    console.log(hobi);
+});
+    var personel = [
+        {
+    ad:'Ali',
+    soyad:'Yilmaz',
+    cinsiyet:'Erkek',
+    telefon: '02623457862',
+    adres : 'izmit kocaeli',
+    meslek : 'Bilgisayar Mühendisi',
+    diller : ['ingilizce','almanca'],
+    hobiler : ['sinema' ,'spor','kitap','okumak'], 
+        },
+        {
+    ad:'Mehmet',
+    soyad:'Yilmaz',
+    cinsiyet:'Erkek',
+    telefon: '02623457862',
+    adres : 'izmit kocaeli',
+    meslek : 'Bilgisayar Mühendisi',
+    diller : ['ingilizce','almanca'],
+    hobiler : ['sinema' ,'spor','kitap','okumak'],
+        },
+        {
+    ad:'Pinar',
+    soyad:'Yilmaz',
+    cinsiyet:'Erkek',
+    telefon: '02623457862',
+    adres : 'izmit kocaeli',
+    meslek : 'Bilgisayar Mühendisi',
+    diller : ['ingilizce','almanca'],
+    hobiler : ['sinema' ,'spor','kitap','okumak'],  
+        }
+        ];
+        personel.forEach(function(personel){
+            console.log('****************');
+        console.log(personel.ad+' '+personel.soyad);
+
+        personel.diller.forEach(function(dil){
+        console.log(dil);
+        });
+        console.log('**************');
+        });
+
+   
+
+
+
+
+
+
+    </script>
+</body>
+</html>

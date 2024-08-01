@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*
+var marka1 = "Opel";
+var marka2 = "Toyota";
+var marka3 = "Mazda";  
+        */
+
+var marka = ["Opel" , "Toyota" , "Mazda" ];
+var model = new Array("Corsa","Yaris","CX-3");
+console.log(model[2]);
+ console.log(marka[2]);
+
+   model[0] = "Astra";     
+      console.log(model);  
+
+var auris = ["Toyota","Auris",42,true];
+auris.push('blue');  //en sona ekler//
+auris.unshift('HB'); //en başa ekler//
+auris.pop(); // en sona ekledigimiz elemanı siler //
+auris.shift(); //en basa ekledigimiz elemani siler //
+console.log(auris);
+
+for (var i=0; i<marka.length;i++){
+    console.log(marka[i]);
+}
+
+if (marka.indexOf('mersedes') !==-1){
+    console.log("bulundu");
+}else{
+    console.log("aranan kelime bulunamadi");
+}
+
+    </script>
+</body>
+</html>

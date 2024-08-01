@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var isim = 'Sevgi';
+        var soyad = 'Çakmak';
+        var Ensevdigirenk = 'Pembe';
+
+        if(isim=='Sevgi'){
+            console.log('kizin ismi Sevgidir. ');
+        }else{
+            console.log('kizin ismi Sevgi degildir. ');
+        } 
+    /*
+     var elma = prompt('sepetteki elma sayisini giriniz: '); 
+      if(elma==0){
+        console.log('Sepette hiç elma yoktur:( ');
+      }else if(elma>0){
+        console.log('sepette elmamiz var:) ');
+      }else{
+        console.log('Elma sayisi belirsiz üzgünüm:!');
+      }
+    */
+   /*
+    var elma = '0';
+    switch(elma){
+        case '0': 
+        console.log('Sepette hiç elma yoktur:( ');
+        break;
+        case '1': 
+        console.log('Sepette bir elma vardir:) ');
+        break;
+        default: 
+        console.log('Sepetteki elma sayisi belirsiz üzgünüm :! ');
+        break;
+    }*/
+    
+    var isim = prompt('İsminiz nedir: ');
+    var dogum = prompt('Dogum tarihinizi giriniz ' +isim+ ' hanim: ');
+    var yil = 2023;
+    var yas = yil - dogum ;
+    
+    if(yas<18){
+        console.log(' reşit degilsiniz ' +isim+ ' Hanim bu yuzden size yardimci olamiyoruz :( ');
+    }else if(yas>=18){
+        console.log(' Programimiza hosgeldiniz ' +isim+ ' hanim :) ');
+    }else{
+        console.log(" yanliş değerler girdiğinizden herhangi bir sonuca ulasamadik");
+    }
+
+
+    </script>
+</body>
+</html>

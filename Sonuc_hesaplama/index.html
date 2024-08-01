@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sonuç Hesaplama</h1>
+
+    <label for="sinav1">1. Sinav Puani:</label>
+    <input type="number" id="sinav1" min="0" max="100"><br><br>
+
+    <label for="sinav2">2. Sinav Puani:</label>
+    <input type="number" id="sinav2" min="0" max="100"><br><br>
+
+    <label for="odev1">1. Ödev Puani:</label>
+    <input type="number" id="odev1" min="0" max="100"><br><br>
+
+    <label for="odev2">2. Ödev Puani:</label>
+    <input type="number" id="odev2" min="0" max="100"><br><br>
+
+    <button onclick="hesapla()">Sonucu Hesapla</button><br><br>
+
+    <div id="sonuc"></div>
+
+    <script>
+        function hesapla() {
+            var sinav1 = parseFloat(document.getElementById("sinav1").value);
+            var sinav2 = parseFloat(document.getElementById("sinav2").value);
+            var odev1 = parseFloat(document.getElementById("odev1").value);
+            var odev2 = parseFloat(document.getElementById("odev2").value);
+
+            var ortalama = (sinav1 * 0.2 + sinav2 * 0.6 + odev1 * 0.1 + odev2 * 0.1).toFixed(2);
+
+            var sonucDiv = document.getElementById("sonuc");
+            sonucDiv.innerHTML = "Ortalama: " + ortalama;
+
+            if (ortalama >= 45) {
+                sonucDiv.innerHTML += "<br>Geçti!";
+            } else {
+                sonucDiv.innerHTML += "<br>Kaldi!";
+            }
+        }
+    </script>
+</body>
+</html>

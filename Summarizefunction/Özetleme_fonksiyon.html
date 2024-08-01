@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/* 
+Bir cümle içinden istenilen karakter sayısına göre bir özet çıkarılsun. Ancak bölünecek nokta bir kelime olamaz.
+*/ 
+
+
+
+
+
+
+    var product = {
+        name : 'Samsung S8',
+        price : 3000,
+        description : 'lorem ipsum dolar sit amet,consectetur adipicing elit.Dolorum, non.',
+        summary : function(){
+            var ozetcumle = [];
+            var maxKarakter = 20;
+            var cumle = this.description;
+
+if(maxKarakter>cumle.length){
+    this.shortDeccription = cumle;
+}else{
+    var kelimeler = cumle.split(' ');
+
+     var toplamkarakter = 0;
+     for(var i=0;i<kelimeler.length;i++){
+        ozetcumle.unshift(kelimeler[i]);
+        toplamkarakter+=kelimeler[i].length;
+
+        if(toplamkarakter>maxKarakter){
+            break;
+        }
+     }
+}
+    this.shortDeccription = ozetcumle.join(' ')+'...';
+        }
+    };
+
+   product.summary();
+   console.log(product);
+function ozet(cumle,maxKarakter){
+
+
+}
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+    var marka = ['Opel','Toyota','Mazda'];
+    var model = ['Corsa','Yaris','CX-3'];
+    var yil = ['2015','2012','2016'];
+
+    console.log(marka + ' ' +model[0] + ' ' + yil[0]);
+
+    var Opel = ['Opel','Corsa','2015'];
+    var Toyota= ['Toyota','Yaris','2012'];
+    var Mazda = ['Mazda','CX-3','2016'];
+    console.log(Opel);
+*/
+
+
+var Opel = {
+    marka : 'Opel',
+    model : 'Corsa',
+    yil : '2015',
+    renk : 'mavi',
+    otomatik : 'true',
+};
+console.log(Opel.marka);
+console.log(Opel.otomatik);
+console.log(Opel['renk']);
+
+var toyota = new Object();
+toyota.marka = 'Toyota';
+toyota.model = 'Yaris';
+toyota.yil = 'Kirmizi';
+toyota.otomatik = 'true';
+
+console.log(toyota.model);
+toyota.model = 'Auris'
+console.log(toyota);
+
+var arabalar = [
+    {
+    marka : 'Opel',
+    model : 'Corsa',
+    yil : '2015',
+    renk : 'mavi',
+    otomatik : 'true',
+},
+{
+    marka : 'Mazda',
+    model : 'CX_3',
+    yil : '2017',
+    renk : 'mavi',
+    otomatik : 'true',
+}
+];
+console.log(arabalar);
+
+    </script>
+</body>
+</html>
